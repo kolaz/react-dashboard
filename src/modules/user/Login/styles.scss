@@ -1,0 +1,37 @@
+// Component Styles
+.form {
+    margin: auto;
+}
+
+.login-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    
+}
+
+.login-inner {
+    background: white;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+    padding: 40px 55px 45px 55px;
+    border-radius: 15px;
+    transition: all .3s;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.login-inner h3 {
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    padding-bottom: 20px;
+}
+
+.button {
+    position: relative;
+    margin: 0px 0px 0px 80px;
+    align-self: center;
+}
