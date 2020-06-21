@@ -123,7 +123,7 @@ export default {
     },
     {
       name: 'Stock',
-      url: '/stocks',
+      url: '/portfolio/quotes',
       icon: 'Package',
     },
   ],

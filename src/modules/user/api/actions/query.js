@@ -56,18 +56,6 @@ export function login({ email, password }, isLoading = true) {
   }
 }
 
-
-// 
-export function setAuthorizationHeader(token = null) {
-  if (token) {
-    axios.defaults.headers.common['Authentication'] = `Bearer ${token}`;
-    //axios.setToken(token, 'Bearer')
-  } else {
-    delete axios.defaults.headers.common['Authentication'];
-  }
-}
-
-
 // Log out user and remove token from local (AsyncStorage)
 export function logout() {
   return dispatch => {

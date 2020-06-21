@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 // UI Imports
 import {
+  Row,
   Card,
   Col,
   CardBody,
@@ -32,14 +33,15 @@ const Quotes = ({ classes }) => {
 
   // render
   return (
-    <div>
+    <div className="table-responsive-md">
+    <Row>
     <Col xs={8}>
        {
           quotes.length === 0
             ? <EmptyMessage message={'No quotes yet.'} />
-            : <Card>
+            : <Card className="card-box mb-5">
             <CardBody>
-                <Table hover responsive>
+                <Table hover responsive bordered striped>
                     <thead>
                         <tr>
                             <th>Symbol</th>
@@ -74,7 +76,9 @@ const Quotes = ({ classes }) => {
                 </CardBody>
               </Card>
         }
-    </Col></div>
+    </Col>
+    </Row>
+    </div>
   )
 }
 

@@ -1,5 +1,4 @@
 // Imports
-import axios from 'axios'
 
 // App Imports
 import { getLatestQuotes, getHisQuotes, getPortfolioList, getPortfolioDetails } from '../../../../setup/api/portfolio'

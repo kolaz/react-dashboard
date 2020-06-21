@@ -22,7 +22,9 @@ class ChartComponent extends React.Component {
 		}
 		return (
 			<div>
+				<TypeChooser>
 				{type => <Chart type={type} data={this.state.data} />}
+				</TypeChooser>
 			</div>
 		)
 	}

@@ -13,9 +13,11 @@ import './setup/scss/styles.scss'
 // App Imports
 import store from './setup/store'
 import routes from './setup/routes'
+//import { checkAuthorization } from './setup/utils/token'
 import Redirector from './modules/common/Redirector'
 import RoutePrivate from './modules/auth/RoutePrivate'
 
+//checkAuthorization()
 
 ReactDOM.render(
   <StateProvider store={store}>

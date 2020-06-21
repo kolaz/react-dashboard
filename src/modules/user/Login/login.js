@@ -71,10 +71,12 @@ const Login = ({ classes }) => {
             </FormGroup>
           </Col>
           {/* Button -  Save */}
-          <Button type="submit" disabled={isLoading} color="primary" className="button">LOGIN</Button>
+          <div className="button">
+          <Button type="submit" disabled={isLoading} color="primary">LOGIN</Button>
           {isLoading && (
           <Spinner color="primary" />
           )}
+          </div>
           </form>
         </Form>
         

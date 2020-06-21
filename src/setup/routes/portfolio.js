@@ -2,7 +2,7 @@
 //import List from '../../modules/portfolio/List'
 import Quotes from '../../modules/portfolio/Quotes'
 //import ChartComponent from '../../modules/portfolio/Chart'
-//import HighChart from '../../modules/portfolio/HighChart'
+import HighChart from '../../modules/portfolio/HighChart'
 import Charts from '../../modules/portfolio/Charts'
 //import Create from '../../modules/portfolio/Create'
 
@@ -32,11 +32,11 @@ export default {
   //   auth: true
   // },
 
-  // portfolioHighChart: {
-  //   path: '/portfolio/highchart',
-  //   component: HighChart,
-  //   auth: true
-  // },
+  portfolioHighChart: {
+    path: '/portfolio/highchart',
+    component: HighChart,
+    auth: true
+  },
 
   // portfolioCreate: {
   //   path: '/portfolio/create',
